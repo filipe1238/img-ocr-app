@@ -1,0 +1,12 @@
+version: '3'
+services:
+  serverimgflaskpython:
+    image: 'img-endpoints'
+    container_name: server-img
+    ports:
+      - "8000:8000"
+  clientimgreact:
+    image: 'img-client'
+    container_name: client-img
+    ports:
+        - '3000:3000'

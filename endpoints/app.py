@@ -7,7 +7,7 @@ load_dotenv()
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'  # Create a directory named 'uploads' in your Flask project folder
 
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
 def hello_world():

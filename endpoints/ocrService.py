@@ -17,8 +17,8 @@ def preprocess_for_ocr(image):
     return image
 
 
-def _imgToText(img):
-    text = pytesseract.image_to_string(img)
+def _imgToText(img, lang='jpn_vert'):
+    text = pytesseract.image_to_string(img, lang=lang)
     # arr = text.split('\n')[0:-1]
     # result = '\n'.join(arr)
 

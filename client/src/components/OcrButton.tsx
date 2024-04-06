@@ -17,7 +17,7 @@ function OcrButton({
     try {
       setIsLoading(true)
       const response = await axios.post(
-        'http://localhost:8000/upload',
+        'https://img-ocr-app-l3mp.onrender.com/upload',
         formData,
         {
           headers: {
